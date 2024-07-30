@@ -54,3 +54,75 @@ func Test_fib(t *testing.T) {
 		})
 	}
 }
+
+func Test_recursionClimbStairs(t *testing.T) {
+	type args struct {
+		n int
+	}
+	tests := []struct {
+		name string
+		args args
+		want int
+	}{
+		{
+			name: "recursionClimbStairs 3",
+			args: args{3},
+			want: 3,
+		},
+	}
+	for _, tt := range tests {
+		t.Run(tt.name, func(t *testing.T) {
+			if got := recursionClimbStairs(tt.args.n); got != tt.want {
+				t.Errorf("recursionClimbStairs() = %v, want %v", got, tt.want)
+			}
+		})
+	}
+}
+
+func Test_removeDupRecursionClimbStairs(t *testing.T) {
+	type args struct {
+		n int
+	}
+	tests := []struct {
+		name string
+		args args
+		want int
+	}{
+		{
+			name: "removeDupRecursionClimbStairs 3",
+			args: args{3},
+			want: 3,
+		},
+	}
+	for _, tt := range tests {
+		t.Run(tt.name, func(t *testing.T) {
+			if got := removeDupRecursionClimbStairs(tt.args.n); got != tt.want {
+				t.Errorf("removeDupRecursionClimbStairs() = %v, want %v", got, tt.want)
+			}
+		})
+	}
+}
+
+func Test_iterativeClimbStairs(t *testing.T) {
+	type args struct {
+		n int
+	}
+	tests := []struct {
+		name string
+		args args
+		want int
+	}{
+		{
+			name: "iterativeClimbStairs 3",
+			args: args{3},
+			want: 3,
+		},
+	}
+	for _, tt := range tests {
+		t.Run(tt.name, func(t *testing.T) {
+			if got := iterativeClimbStairs(tt.args.n); got != tt.want {
+				t.Errorf("iterativeClimbStairs() = %v, want %v", got, tt.want)
+			}
+		})
+	}
+}
