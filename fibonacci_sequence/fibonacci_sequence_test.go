@@ -1,4 +1,4 @@
-package dp
+package fibonacci_sequence
 
 import "testing"
 

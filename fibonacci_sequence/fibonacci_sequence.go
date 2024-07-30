@@ -1,4 +1,4 @@
-package dp
+package fibonacci_sequence
 
 //The Fibonacci sequence pattern is useful when the solution to
 //a problem depends on the solutions of smaller instances of the same problem.
