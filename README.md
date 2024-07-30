@@ -1,371 +1,283 @@
-# dp
-dynamic programming
+# 动态规划
 
+## **1. 斐波那契数列**
 
-## **1\. Fibonacci Sequence**
+**[斐波那契数列](https://en.wikipedia.org/wiki/Fibonacci_sequence)** 模式在解决依赖于较小实例问题解的情况下非常有用。
 
+有一个明显的递归关系，通常类似于经典的斐波那契数列 `F(n) = F(n-1) + F(n-2)`。
 
+#### LeetCode题目：
 
+- [LeetCode 70: 爬楼梯](https://leetcode.com/problems/climbing-stairs/description/)
+- [LeetCode 509: 斐波那契数](https://leetcode.com/problems/fibonacci-number/description/)
+- [LeetCode 746. 使用最小花费爬楼梯](https://leetcode.com/problems/min-cost-climbing-stairs/description/)
 
-The **[Fibonacci sequence](https://en.wikipedia.org/wiki/Fibonacci_sequence)** pattern is useful when the solution to a problem depends on the solutions of smaller instances of the same problem.
+## 2. Kadane算法
 
-There is a clear recursive relationship, often resembling the classic Fibonacci sequence `F(n) = F(n-1) + F(n-2)`.
-#### LeetCode Problems:
+**[Kadane算法](https://medium.com/@rsinghal757/kadanes-algorithm-dynamic-programming-how-and-why-does-it-work-3fd8849ed73d)** 主要用于解决最大子数组问题及其变种，这些问题要求在一维数字数组内优化一个连续子数组。
 
--   [LeetCode 70: Climbing Stairs](https://leetcode.com/problems/climbing-stairs/description/)
--   [LeetCode 509: Fibonacci Number](https://leetcode.com/problems/fibonacci-number/description/)
--   [LeetCode 746. Min Cost Climbing Stairs](https://leetcode.com/problems/min-cost-climbing-stairs/description/)
-## 2\. Kadane's Algorithm
+#### LeetCode题目：
 
+- [LeetCode 53: 最大子序和](https://leetcode.com/problems/maximum-subarray/description/)
+- [LeetCode 918: 环形子数组的最大和](https://leetcode.com/problems/maximum-sum-circular-subarray/description/)
+- [LeetCode 152: 乘积最大子数组](https://leetcode.com/problems/maximum-product-subarray/description/)
 
-**[Kadane's Algorithm](https://medium.com/@rsinghal757/kadanes-algorithm-dynamic-programming-how-and-why-does-it-work-3fd8849ed73d)** is primarily used for solving the Maximum Subarray Problem and its variations where the problem asks to optimize a contiguous subarray within a one-dimensional numeric array
+## 3. 0/1背包
 
-#### LeetCode Problems:
+**[0/1背包](https://www.geeksforgeeks.org/0-1-knapsack-problem-dp-10/)** 模式在以下情况下非常有用：
 
--   [LeetCode 53: Maximum Subarray](https://leetcode.com/problems/maximum-subarray/description/
--   [LeetCode 918: Maximum Sum Circular Subarray](https://leetcode.com/problems/maximum-sum-circular-subarray/description/)
--   [LeetCode 152: Maximum Product Subarray](https://leetcode.com/problems/maximum-product-subarray/description/)
-## 3\. 0/1 Knapsack
+1. 你有一组物品，每个物品都有一个重量和一个价值。
+2. 你需要选择这些物品的一个子集。
+3. 对总重量（或其他资源）有一个约束。
+4. 你希望最大化（或最小化）所选物品的总价值。
+5. 每个物品只能选择一次（因此称为"0/1" - 你要么选它，要么不选）。
 
+#### LeetCode题目：
 
-The **[0/1 Knapsack](https://www.geeksforgeeks.org/0-1-knapsack-problem-dp-10/)** pattern is useful when:
-1.  You have a set of items, each with a weight and a value.
-2.  You need to select a subset of these items.
-3.  There's a constraint on the total weight (or some other resource) you can use.
-4.  You want to maximize (or minimize) the total value of the selected items.
-5.  Each item can be chosen only once (hence the "0/1" - you either take it or you don't).
+- [LeetCode 416: 分割等和子集](https://leetcode.com/problems/partition-equal-subset-sum/description/)
+- [LeetCode 494: 目标和](https://leetcode.com/problems/target-sum/description/)
+- [LeetCode 1049. 最后一块石头的重量 II](https://leetcode.com/problems/last-stone-weight-ii/description/)
 
-#### LeetCode Problems:
--   [LeetCode 416: Partition Equal Subset Sum](https://leetcode.com/problems/partition-equal-subset-sum/description/)
--   [LeetCode 494: Target Sum](https://leetcode.com/problems/target-sum/description/)
--   [LeetCode 1049. Last Stone Weight II](https://leetcode.com/problems/last-stone-weight-ii/description/)
+## 4. 无限背包
 
-## 4\. Unbounded Knapsack
+**[无限背包](https://www.geeksforgeeks.org/unbounded-knapsack-repetition-items-allowed/)** 模式在以下情况下非常有用：
 
-The **[Unbounded Knapsack](https://www.geeksforgeeks.org/unbounded-knapsack-repetition-items-allowed/)** pattern is useful when:
-1.  You have a set of items, each with a weight and a value.
-2.  You need to select items to maximize total value.
-3.  There's a constraint on the total weight (or some other resource) you can use.
-4.  You can select each item multiple times (unlike 0/1 Knapsack where each item can be chosen only once).
-5.  The supply of each item is considered infinite.
+1. 你有一组物品，每个物品都有一个重量和一个价值。
+2. 你需要选择物品以最大化总价值。
+3. 对总重量（或其他资源）有一个约束。
+4. 你可以多次选择每个物品（不像0/1背包，每个物品只能选择一次）。
+5. 每种物品的供应被视为无限。
 
+#### LeetCode题目：
 
-#### LeetCode Problems:
--   [LeetCode 322: Coin Change](https://leetcode.com/problems/coin-change/description/)
--   [LeetCode 518: Coin Change 2](https://leetcode.com/problems/coin-change-ii/description/)
--   [LeetCode 279. Perfect Squares](https://leetcode.com/problems/perfect-squares/description/)
+- [LeetCode 322: 零钱兑换](https://leetcode.com/problems/coin-change/description/)
+- [LeetCode 518: 零钱兑换 II](https://leetcode.com/problems/coin-change-ii/description/)
+- [LeetCode 279. 完全平方数](https://leetcode.com/problems/perfect-squares/description/)
 
-## 5\. Longest Common Subsequence (LCS)
+## 5. 最长公共子序列 (LCS)
 
+**[最长公共子序列](https://www.youtube.com/watch?v=NnD96abizww)** 模式在给定两个序列时非常有用，需要找到一个子序列，它以相同的顺序出现在两个给定序列中。
 
-The **[Longest Common Subsequence](https://www.youtube.com/watch?v=NnD96abizww)** pattern is useful when you are given two sequences and need to find a subsequence that appears in the same order in both the given sequences.
+#### LeetCode题目：
 
-#### LeetCode Problems:
+- [LeetCode 1143: 最长公共子序列](https://leetcode.com/problems/longest-common-subsequence/description/)
+- [LeetCode 583: 两个字符串的删除操作](https://leetcode.com/problems/delete-operation-for-two-strings/description/)
+- [LeetCode 1092: 最短公共超序列](https://leetcode.com/problems/shortest-common-supersequence/description/)
 
--   [LeetCode 1143: Longest Common Subsequence](https://leetcode.com/problems/longest-common-subsequence/description/)
+## 6. 最长递增子序列 (LIS)
 
--   [LeetCode 583: Delete Operation for Two Strings](https://leetcode.com/problems/delete-operation-for-two-strings/description/)
+**[最长递增子序列](https://www.youtube.com/watch?v=CE2b_-XfVDk)** 模式用于解决涉及找到一个序列中元素按递增顺序排列的最长子序列的问题。
 
--   [LeetCode 1092: Shortest Common Supersequence](https://leetcode.com/problems/shortest-common-supersequence/description/)
+#### LeetCode题目：
 
+- [LeetCode 300: 最长递增子序列](https://leetcode.com/problems/longest-increasing-subsequence/description/)
+- [LeetCode 673: 最长递增子序列的个数](https://leetcode.com/problems/number-of-longest-increasing-subsequence/description/)
+- [leetCode 354: 俄罗斯套娃信封问题](https://leetcode.com/problems/russian-doll-envelopes/description/)
 
-## 6\. Longest Increasing Subsequence (LIS)
+## 7. 回文子序列
 
+**[回文子序列](https://www.youtube.com/watch?v=bUr8cNWI09Q)** 模式用于解决涉及在一个序列（通常是字符串）中找到一个前后读取相同的子序列的问题。
 
+#### LeetCode题目：
 
-The **[Longest Increasing Subsequence](https://www.youtube.com/watch?v=CE2b_-XfVDk)** pattern is used to solve problems that involve finding the longest subsequence of elements in a sequence where the elements are in increasing order.
+- [LeetCode 516: 最长回文子序列](https://leetcode.com/problems/longest-palindromic-subsequence/description/)
+- [LeetCode 647: 回文子串](https://leetcode.com/problems/palindromic-substrings/description/)
+- [LeetCode 1312: 让字符串成为回文串的最少插入次数](https://leetcode.com/problems/minimum-insertion-steps-to-make-a-string-palindrome/description/)
 
-#### LeetCode Problems:
+## 8. 编辑距离
 
--   [LeetCode 300: Longest Increasing Subsequence](https://leetcode.com/problems/longest-increasing-subsequence/description/)
+**[编辑距离](https://www.geeksforgeeks.org/edit-distance-dp-5/)** 模式用于解决涉及将一个序列（通常是字符串）转换为另一个序列，使用最小操作次数的问题。
 
--   [LeetCode 673: Number of Longest Increasing Subsequence](https://leetcode.com/problems/number-of-longest-increasing-subsequence/description/)
+允许的操作通常包括插入、删除和替换。
 
--   [leetCode 354: Russian Doll Envelopes](https://leetcode.com/problems/russian-doll-envelopes/description/)
+#### LeetCode题目：
 
+- [LeetCode 72: 编辑距离](https://leetcode.com/problems/edit-distance/description/)
+- [LeetCode 583: 两个字符串的删除操作](https://leetcode.com/problems/delete-operation-for-two-strings/description/)
+- [LeetCode 712: 两个字符串的最小ASCII删除和](https://leetcode.com/problems/minimum-ascii-delete-sum-for-two-strings/description/)
 
-## 7\. Palindromic Subsequence
+## 9. 子集和
 
+**[子集和](https://www.youtube.com/watch?v=s6FhG--P7z0)** 模式用于解决需要确定给定集合中的元素子集是否可以加和达到特定目标值的问题。
 
+#### LeetCode题目：
 
-The **[Palindromic Subsequence](https://www.youtube.com/watch?v=bUr8cNWI09Q)** pattern is used when solving problems that involve finding a subsequence within a sequence (usually a string) that reads the same forwards and backwards.
+- [LeetCode 416: 分割等和子集](https://leetcode.com/problems/partition-equal-subset-sum/description/)
+- [LeetCode 494: 目标和](https://leetcode.com/problems/target-sum/description/)
+- [LeetCode 698: 划分为k个相等的子集](https://leetcode.com/problems/partition-to-k-equal-sum-subsets/)
 
-#### LeetCode Problems:
+## 10. 字符串分割
 
--   [LeetCode 516: Longest Palindromic Subsequence](https://leetcode.com/problems/longest-palindromic-subsequence/description/)
+**[字符串分割](https://www.youtube.com/watch?v=Sx9NNgInc3A)** 模式用于解决涉及将字符串分割为满足某些条件的较小子字符串的问题。
 
--   [LeetCode 647: Palindromic Substrings](https://leetcode.com/problems/palindromic-substrings/description/)
+在以下情况下很有用：
 
--   [LeetCode 1312: Minimum Insertion Steps to Make a String Palindrome](https://leetcode.com/problems/minimum-insertion-steps-to-make-a-string-palindrome/description/)
+- 你在处理涉及字符串或序列的问题。
+- 问题需要将字符串拆分为子字符串或子序列。
+- 你需要优化这些分割上的某些属性（例如，最小化成本，最大化价值）。
+- 整体问题的解决方案可以从较小子字符串上的子问题解决方案构建。
+- 需要考虑字符串分割的不同方式。
 
+#### LeetCode题目：
 
-## 8\. Edit Distance
+- [LeetCode 139: 单词拆分](https://leetcode.com/problems/word-break/description/)
+- [LeetCode 132. 分割回文串 II](https://leetcode.com/problems/palindrome-partitioning-ii/description/)
+- [LeetCode 472: 连接词](https://leetcode.com/problems/concatenated-words/description/)
 
-The **[Edit Distance](https://www.geeksforgeeks.org/edit-distance-dp-5/)** pattern is used to solve problems that involve transforming one sequence (usually a string) into another sequence using a minimum number of operations.
+## 11. 卡塔兰数
 
-The allowed operations typically include insertion, deletion, and substitution.
+**[卡塔兰数](https://en.wikipedia.org/wiki/Catalan_number)** 模式用于解决可以分解为较小、类似子问题的组合问题。
 
-#### LeetCode Problems:
+一些使用案例包括：
 
--   [LeetCode 72: Edit Distance](https://leetcode.com/problems/edit-distance/description/)
+- 计算给定长度的**有效括号**表达式的数量。
+- 计算可以用`n`个节点形成的不同**二叉搜索树**的数量。
+- 计算用`n+2`条边划分多边形的不同方法的数量。
 
--   [LeetCode 583: Delete Operation for Two Strings](https://leetcode.com/problems/delete-operation-for-two-strings/description/)
-
--   [LeetCode 712: Minimum ASCII Delete Sum for Two Strings](https://leetcode.com/problems/minimum-ascii-delete-sum-for-two-strings/description/)
-
-
-## 9\. Subset Sum
-
-The **[Subset Sum](https://www.youtube.com/watch?v=s6FhG--P7z0)** pattern is used to solve problems where you need to determine whether a subset of elements from a given set can sum up to a specific target value.
-
-#### LeetCode Problems:
-
--   [LeetCode 416: Partition Equal Subset Sum](https://leetcode.com/problems/partition-equal-subset-sum/description/)
-
--   [LeetCode 494: Target Sum](https://leetcode.com/problems/target-sum/description/)
-
--   [LeetCode 698: Partition to K Equal Sum Subsets](https://leetcode.com/problems/partition-to-k-equal-sum-subsets/)
-
-
-## 10\. String Partition
-
-The **[String Partition](https://www.youtube.com/watch?v=Sx9NNgInc3A)** pattern is used to solve problems that involve partitioning a string into smaller substrings that satisfy certain conditions.
-
-It’s useful when:
-
--   You're working with problems involving strings or sequences.
-
--   The problem requires splitting the string into substrings or subsequences.
-
--   You need to optimize some property over these partitions (e.g., minimize cost, maximize value).
-
--   The solution to the overall problem can be built from solutions to subproblems on smaller substrings.
-
--   There's a need to consider different ways of partitioning the string.
-
-
-#### LeetCode Problems:
-
--   [LeetCode 139: Word Break](https://leetcode.com/problems/word-break/description/)
-
--   [LeetCode 132. Palindrome Partitioning II](https://leetcode.com/problems/palindrome-partitioning-ii/description/)
-
--   [LeetCode 472: Concatenated Words](https://leetcode.com/problems/concatenated-words/description/)
-
-
-## 11\. Catalan Numbers
-
-The **[Catalan Number](https://en.wikipedia.org/wiki/Catalan_number)** pattern is used to solve combinatorial problems that can be decomposed into smaller, similar subproblems.
-
-Some of the use-cases of this pattern include:
-
--   Counting the number of **valid parentheses** expressions of a given length
-
--   Counting the number of distinct **binary search trees** that can be formed with `n` nodes.
-
--   Counting the number of ways to triangulate a polygon with `n+2` sides.
-
-
-#### LeetCode Problems:
+#### LeetCode题目：
 
 -   [LeetCode 96: Unique Binary Search Trees](https://leetcode.com/problems/unique-binary-search-trees/description/)
-
 -   [LeetCode 22: Generate Parentheses](https://leetcode.com/problems/generate-parentheses/description/)
 
+## 12. 三角形路径和
 
-## 12\. Matrix Chain Multiplication
+**三角形路径和** 模式用于解决涉及通过三角形路径选择最小或最大值的问题。
 
-This pattern is used to solve problems that involve determining the optimal order of operations to minimize the cost of performing a series of operations.
-
-It is based on the popular optimization problem: **[Matrix Chain Multiplication](https://en.wikipedia.org/wiki/Matrix_chain_multiplication)**.
-
-It’s useful when:
-
-1.  You're dealing with a sequence of elements that can be combined pairwise.
-
-2.  The cost of combining elements depends on the order of combination.
-
-3.  You need to find the optimal way to combine the elements.
-
-4.  The problem involves minimizing (or maximizing) the cost of operations of combining the elements.
-
-
-#### LeetCode Problems:
-
+#### LeetCode题目：
 -   [LeetCode 1039: Minimum Score Triangulation of Polygon](https://leetcode.com/problems/minimum-score-triangulation-of-polygon/description/)
-
 -   [LeetCode 312: Burst Balloons](https://leetcode.com/problems/burst-balloons/description/)
-
 -   [LeetCode 1000: Minimum Cost to Merge Stones](https://leetcode.com/problems/minimum-cost-to-merge-stones/description/)
 
+## 13. 线性DP
 
-## 13\. Count Distinct Ways
+**线性DP** 模式用于解决以下问题：
 
-This **[pattern](https://www.youtube.com/watch?v=6aEyTjOwlJU)** is useful when:
+- 给定序列时寻找最长的按顺序排列的特定类型子序列。
+- 优化序列上的路径。
+- 选择满足特定条件的最优子集。
 
-1.  You need to **count** the number of different ways to achieve a certain goal or reach a particular state.
-
-2.  The problem involves making a series of choices or steps to reach a target.
-
-3.  There are multiple valid paths or combinations to reach the solution.
-
-4.  The problem can be broken down into smaller subproblems with overlapping solutions.
-
-5.  You're dealing with combinatorial problems that ask **"in how many ways"** can something be done.
-
-
-#### LeetCode Problems:
-
+#### LeetCode题目：
 -   [LeetCode 91: Decode Ways](https://leetcode.com/problems/decode-ways/description/)
-
 -   [LeetCode 2266. Count Number of Texts](https://leetcode.com/problems/count-number-of-texts/description/)
 
+## 14. 区间DP
 
-## 14\. DP on Grids
+**区间DP** 模式用于解决涉及从序列的某些区间获取最优值的问题。
 
-
-The **[DP on Grids](https://www.youtube.com/watch?v=sdE0A2Oxofw)** pattern is used to solve problems that involve navigating or optimizing paths within a grid (2D array).
-
-For these problems, you need to consider multiple directions of movement (e.g., right, down, diagonal) and solution at each cell depends on the solutions of neighboring cells.
-
-#### LeetCode Problems:
-
+#### LeetCode题目：
 -   [LeetCode 62: Unique Paths](https://leetcode.com/problems/unique-paths/description/)
-
 -   [LeetCode 64: Minimum Path Sum](https://leetcode.com/problems/minimum-path-sum/description/)
-
 -   [LeetCode 329. Longest Increasing Path in a Matrix](https://leetcode.com/problems/longest-increasing-path-in-a-matrix/description/)
 
+## 15. 位运算DP
 
-## 15\. DP on Trees
+**位运算DP** 模式用于解决涉及组合优化和集合操作的问题。
 
-The **[DP on Trees](https://codeforces.com/blog/entry/20935)** pattern is useful when:
-
-1.  You're working with tree-structured data represented by nodes and edges.
-
-2.  The problem can be broken down into solutions of subproblems that are themselves tree problems.
-
-3.  The problem requires making decisions at each node that affect its children or parent.
-
-4.  You need to compute values for nodes based on their children or ancestors.
-
-
-#### LeetCode Problems:
-
+#### LeetCode题目：
 -   [LeetCode 337: House Robber III](https://leetcode.com/problems/house-robber-iii/description/)
-
 -   [LeetCode 124: Binary Tree Maximum Path Sum](https://leetcode.com/problems/binary-tree-maximum-path-sum/description/)
-
 -   [LeetCode 968: Binary Tree Cameras](https://leetcode.com/problems/binary-tree-cameras/description/)
+## 16. 图上的动态规划
+
+**[图上的动态规划](https://medium.com/@logicdevildotcom/dynamic-programming-applied-to-graphs-f33b6b8a8247)** 模式在以下情况下非常有用：
+
+1. 你在处理涉及图结构的问题。
+
+2. 问题需要找到图上的最优路径、最长路径、循环或其他优化属性。
+
+3. 你需要基于节点或边的邻居或连接组件计算值。
+
+4. 问题涉及遍历图，同时维护一些状态。
 
 
-## 16\. DP on Graphs
+#### LeetCode题目：
 
-The **[DP on Graphs](https://medium.com/@logicdevildotcom/dynamic-programming-applied-to-graphs-f33b6b8a8247)** pattern is useful when:
-
-1.  You're dealing with problems involving graph structures.
-
-2.  The problem requires finding optimal paths, longest paths, cycles, or other optimized properties on graphs.
-
-3.  You need to compute values for nodes or edges based on their neighbors or connected components.
-
-4.  The problem involves traversing a graph while maintaining some state.
+- [LeetCode 787: K站中转内最便宜的航班](https://leetcode.com/problems/cheapest-flights-within-k-stops/description/)
+- [LeetCode 1334: 阈值距离内邻居最少的城市](https://leetcode.com/problems/find-the-city-with-the-smallest-number-of-neighbors-at-a-threshold-distance/description/)
 
 
-#### LeetCode Problems:
+## 17. 数位DP
 
--   [LeetCode 787: Cheapest Flights Within K Stops](https://leetcode.com/problems/cheapest-flights-within-k-stops/description/)
+**[数位DP](https://www.geeksforgeeks.org/digit-dp-introduction/)** 模式在以下情况下非常有用：
 
--   [LeetCode 1334. Find the City With the Smallest Number of Neighbors at a Threshold Distance](https://leetcode.com/problems/find-the-city-with-the-smallest-number-of-neighbors-at-a-threshold-distance/description/)
+1. 你在处理涉及范围内的数字计数或求和的问题。
 
+2. 问题需要单独考虑数字的每一位。
 
-## 17\. Digit DP
+3. 你需要找到与范围内数字的数字相关的模式或属性。
 
-The **[Digit DP Pattern](https://www.geeksforgeeks.org/digit-dp-introduction/)** is useful when:
+4. 数字的范围很大（通常高达10^18或更多），使得暴力方法不可行。
 
-1.  You're dealing with problems involving counting or summing over a range of numbers.
-
-2.  The problem requires considering the digits of numbers individually.
-
-3.  You need to find patterns or properties related to the digits of numbers within a range.
-
-4.  The range of numbers is large (often up to 10^18 or more), making brute force approaches infeasible.
-
-5.  The problem involves constraints on the digits.
+5. 问题涉及对数字的限制。
 
 
-#### LeetCode Problems:
+#### LeetCode题目：
 
--   [LeetCode 357: Count Numbers with Unique Digits](https://leetcode.com/problems/count-numbers-with-unique-digits/description/)
-
--   [LeetCode 233: Number of Digit One](https://leetcode.com/problems/number-of-digit-one/description/)
-
--   [LeetCode 902. Numbers At Most N Given Digit Set](https://leetcode.com/problems/numbers-at-most-n-given-digit-set/description/)
+- [LeetCode 357: 统计各位数字都不同的数字个数](https://leetcode.com/problems/count-numbers-with-unique-digits/description/)
+- [LeetCode 233: 数字1的个数](https://leetcode.com/problems/number-of-digit-one/description/)
+- [LeetCode 902: 最大为N的数字组合](https://leetcode.com/problems/numbers-at-most-n-given-digit-set/description/)
 
 
-## 18\. Bitmasking DP
+## 18. 位运算DP
 
-The **[Bitmasking DP pattern](https://www.hackerearth.com/practice/algorithms/dynamic-programming/bit-masking/tutorial/)** is used to solve problems that involve a large number of **states** or **combinations**, where each state can be efficiently represented using **bits** in an integer.
+**[位运算DP](https://www.hackerearth.com/practice/algorithms/dynamic-programming/bit-masking/tutorial/)** 模式用于解决涉及大量**状态**或**组合**的问题，其中每个状态都可以用整数中的**位**有效表示。
 
-It’s particularly useful when:
+它特别有用在以下情况下：
 
-1.  You're dealing with problems involving **subsets** or **combinations** of elements.
+1. 你在处理涉及**子集**或**组合**元素的问题。
 
-2.  The total number of elements is relatively small (typically <= 20-30).
+2. 元素总数相对较少（通常<= 20-30）。
 
-3.  You need to efficiently represent and manipulate sets of elements.
+3. 你需要有效地表示和操作元素集。
 
-4.  The problem involves making decisions for each element (include/exclude) or tracking visited/unvisited states.
+4. 问题涉及为每个元素做出决策（包括/排除）或跟踪访问/未访问的状态。
 
-5.  You want to optimize space usage in DP solutions.
-
-
-#### LeetCode Problems:
-
--   [LeetCode 1986: Minimum Number of Work Sessions to Finish the Tasks](https://leetcode.com/problems/minimum-number-of-work-sessions-to-finish-the-tasks/description/)
-
--   [LeetCode 2305. Fair Distribution of Cookies](https://leetcode.com/problems/fair-distribution-of-cookies/description/)
-
--   [LeetCode 847: Shortest Path Visiting All Nodes](https://leetcode.com/problems/shortest-path-visiting-all-nodes/description/)
+5. 你想在DP解决方案中优化空间使用。
 
 
-## 19\. Probability DP
+#### LeetCode题目：
 
-This pattern is useful when:
-
-1.  You're dealing with problems involving probability calculations.
-
-2.  The probability of a state depends on the probabilities of previous states.
-
-3.  You need to calculate the expected value of an outcome.
-
-4.  The problem involves random processes or games of chance.
+- [LeetCode 1986: 完成任务的最少工作时间段](https://leetcode.com/problems/minimum-number-of-work-sessions-to-finish-the-tasks/description/)
+- [LeetCode 2305: 公平分发饼干](https://leetcode.com/problems/fair-distribution-of-cookies/description/)
+- [LeetCode 847: 访问所有节点的最短路径](https://leetcode.com/problems/shortest-path-visiting-all-nodes/description/)
 
 
-#### LeetCode Problems:
+## 19. 概率DP
 
--   [LeetCode 688: Knight Probability in Chessboard](https://leetcode.com/problems/knight-probability-in-chessboard/description/)
+这种模式在以下情况下非常有用：
 
--   [LeetCode 808: Soup Servings](https://leetcode.com/problems/soup-servings/description/)
+1. 你在处理涉及概率计算的问题。
 
--   [LeetCode 837. New 21 Game](https://leetcode.com/problems/new-21-game/description/)
+2. 状态的概率取决于先前状态的概率。
 
+3. 你需要计算结果的期望值。
 
-## 20\. State Machine DP
-
-The **[State Machine DP Pattern](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-transaction-fee/solutions/108870/most-consistent-ways-of-dealing-with-the-series-of-stock-problems/)** is useful when when:
-
-1.  The problem can be modeled as a series of states and transitions between these states.
-
-2.  There are clear rules for moving from one state to another.
-
-3.  The optimal solution depends on making the best sequence of state transitions.
-
-4.  The problem involves making decisions that affect future states.
-
-5.  There's a finite number of possible states, and each state can be clearly defined.
+4. 问题涉及随机过程或机会游戏。
 
 
-#### LeetCode Problems:
--   [LeetCode 309: Best Time to Buy and Sell Stock with Cooldown](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-cooldown/description/)
--   [LeetCode 123: Best Time to Buy and Sell Stock III](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iii/description/)
+#### LeetCode题目：
+
+- [LeetCode 688: “马”在棋盘上的概率](https://leetcode.com/problems/knight-probability-in-chessboard/description/)
+- [LeetCode 808: 分汤](https://leetcode.com/problems/soup-servings/description/)
+- [LeetCode 837: 新21点](https://leetcode.com/problems/new-21-game/description/)
+
+
+## 20. 状态机DP
+
+**[状态机DP](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-transaction-fee/solutions/108870/most-consistent-ways-of-dealing-with-the-series-of-stock-problems/)** 模式在以下情况下非常有用：
+
+1. 问题可以建模为一系列状态和这些状态之间的转换。
+
+2. 有明确的规则从一个状态移动到另一个状态。
+
+3. 最优解依赖于做出最佳的状态转换序列。
+
+4. 问题涉及做出影响未来状态的决策。
+
+5. 存在有限数量的可能状态，并且每个状态可以明确定义。
+
+
+#### LeetCode题目：
+
+- [LeetCode 309: 最佳买卖股票时机含冷冻期](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-cooldown/description/)
+- [LeetCode 123: 买卖股票的最佳时机 III](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iii/description/)
