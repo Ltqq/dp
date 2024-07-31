@@ -119,3 +119,7 @@ func climbStairs(n int) int {
 复杂度分析
 - 时间复杂度：O(n)。
 - 空间复杂度：O(1)。仅用到若干变量。  
+
+
+## 最小花费爬楼梯 调用栈图
+![image.png](http://cdn.ltq9.top//image-ltq202407311440466.png)

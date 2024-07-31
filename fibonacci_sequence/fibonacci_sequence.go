@@ -6,8 +6,6 @@ package fibonacci_sequence
 //There is a clear recursive relationship,
 //often resembling the classic Fibonacci sequence F(n) = F(n-1) + F(n-2).
 
-//[LeetCode 746. Min Cost Climbing Stairs](https://leetcode.com/problems/min-cost-climbing-stairs/description/)
-
 // [LeetCode 70: Climbing Stairs](https://leetcode.com/problems/climbing-stairs/description/)
 func climbStairs(n int) int {
 	var a, b = 1, 1
@@ -59,4 +57,39 @@ func fib(n int) int {
 		n1, n2 = n2, n1+n2
 	}
 	return n1
+}
+
+// [LeetCode 746. Min Cost Climbing Stairs](https://leetcode.com/problems/min-cost-climbing-stairs/description/)
+func minCostClimbingStairs(cost []int) int {
+	return min(cost, len(cost))
+}
+
+// min(cost, 4)
+// │
+// ├── min(cost, 2)
+// │   ├── min(cost, 0) --> 0
+// │   └── min(cost, 1) --> 0
+// │   └── returns 0
+// │
+// └── min(cost, 3)
+//
+//	├── min(cost, 1) --> 0
+//	└── min(cost, 2)
+//	    ├── min(cost, 0) --> 0
+//	    └── min(cost, 1) --> 0
+//	    └── returns 0
+//	└── returns 2
+//
+// └── returns 2
+func min(cost []int, n int) int {
+	if n <= 1 {
+		return 0
+	}
+	a := cost[n-2]
+	b := cost[n-1]
+	if a+min(cost, n-2) <= b+min(cost, n-1) {
+		return a
+	} else {
+		return b
+	}
 }
