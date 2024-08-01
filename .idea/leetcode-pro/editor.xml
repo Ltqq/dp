@@ -3,6 +3,18 @@
   <component name="LeetcodeEditorPro">
     <option name="projectConfig">
       <map>
+        <entry key="$USER_HOME$/AppData/Local/Temp/leetcode/editor/cn/[53]最大子数组和.go">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$USER_HOME$/AppData/Local/Temp/leetcode/editor/cn/doc/content/[53]最大子数组和.md" />
+              <option name="frontendQuestionId" value="leetcode.cn53" />
+              <option name="host" value="leetcode.cn" />
+              <option name="langSlug" value="golang" />
+              <option name="path" value="$USER_HOME$/AppData/Local/Temp/leetcode/editor/cn/[53]最大子数组和.go" />
+              <option name="titleSlug" value="maximum-subarray" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$USER_HOME$/AppData/Local/Temp/leetcode/editor/cn/[70]爬楼梯.go">
           <value>
             <LeetcodeEditor>
@@ -12,6 +24,18 @@
               <option name="langSlug" value="golang" />
               <option name="path" value="$USER_HOME$/AppData/Local/Temp/leetcode/editor/cn/[70]爬楼梯.go" />
               <option name="titleSlug" value="climbing-stairs" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/AppData/Local/Temp/leetcode/editor/cn/[746]使用最小花费爬楼梯.go">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$USER_HOME$/AppData/Local/Temp/leetcode/editor/cn/doc/content/[746]使用最小花费爬楼梯.md" />
+              <option name="frontendQuestionId" value="leetcode.cn746" />
+              <option name="host" value="leetcode.cn" />
+              <option name="langSlug" value="golang" />
+              <option name="path" value="$USER_HOME$/AppData/Local/Temp/leetcode/editor/cn/[746]使用最小花费爬楼梯.go" />
+              <option name="titleSlug" value="min-cost-climbing-stairs" />
             </LeetcodeEditor>
           </value>
         </entry>
