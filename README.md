@@ -1,6 +1,6 @@
-# 动态规划
-
 ## **1. 斐波那契数列**
+
+# 动态规划
 
 **[斐波那契数列](https://en.wikipedia.org/wiki/Fibonacci_sequence)** 模式在解决依赖于较小实例问题解的情况下非常有用。
 
@@ -131,22 +131,23 @@
 一些使用案例包括：
 
 - 计算给定长度的**有效括号**表达式的数量。
-- 计算可以用`n`个节点形成的不同**二叉搜索树**的数量。
-- 计算用`n+2`条边划分多边形的不同方法的数量。
+- 计算可以用 `n`个节点形成的不同**二叉搜索树**的数量。
+- 计算用 `n+2`条边划分多边形的不同方法的数量。
 
 #### LeetCode题目：
 
--   [LeetCode 96: Unique Binary Search Trees](https://leetcode.com/problems/unique-binary-search-trees/description/)
--   [LeetCode 22: Generate Parentheses](https://leetcode.com/problems/generate-parentheses/description/)
+- [LeetCode 96: Unique Binary Search Trees](https://leetcode.com/problems/unique-binary-search-trees/description/)
+- [LeetCode 22: Generate Parentheses](https://leetcode.com/problems/generate-parentheses/description/)
 
 ## 12. 三角形路径和
 
 **三角形路径和** 模式用于解决涉及通过三角形路径选择最小或最大值的问题。
 
 #### LeetCode题目：
--   [LeetCode 1039: Minimum Score Triangulation of Polygon](https://leetcode.com/problems/minimum-score-triangulation-of-polygon/description/)
--   [LeetCode 312: Burst Balloons](https://leetcode.com/problems/burst-balloons/description/)
--   [LeetCode 1000: Minimum Cost to Merge Stones](https://leetcode.com/problems/minimum-cost-to-merge-stones/description/)
+
+- [LeetCode 1039: Minimum Score Triangulation of Polygon](https://leetcode.com/problems/minimum-score-triangulation-of-polygon/description/)
+- [LeetCode 312: Burst Balloons](https://leetcode.com/problems/burst-balloons/description/)
+- [LeetCode 1000: Minimum Cost to Merge Stones](https://leetcode.com/problems/minimum-cost-to-merge-stones/description/)
 
 ## 13. 线性DP
 
@@ -157,66 +158,59 @@
 - 选择满足特定条件的最优子集。
 
 #### LeetCode题目：
--   [LeetCode 91: Decode Ways](https://leetcode.com/problems/decode-ways/description/)
--   [LeetCode 2266. Count Number of Texts](https://leetcode.com/problems/count-number-of-texts/description/)
+
+- [LeetCode 91: Decode Ways](https://leetcode.com/problems/decode-ways/description/)
+- [LeetCode 2266. Count Number of Texts](https://leetcode.com/problems/count-number-of-texts/description/)
 
 ## 14. 区间DP
 
 **区间DP** 模式用于解决涉及从序列的某些区间获取最优值的问题。
 
 #### LeetCode题目：
--   [LeetCode 62: Unique Paths](https://leetcode.com/problems/unique-paths/description/)
--   [LeetCode 64: Minimum Path Sum](https://leetcode.com/problems/minimum-path-sum/description/)
--   [LeetCode 329. Longest Increasing Path in a Matrix](https://leetcode.com/problems/longest-increasing-path-in-a-matrix/description/)
+
+- [LeetCode 62: Unique Paths](https://leetcode.com/problems/unique-paths/description/)
+- [LeetCode 64: Minimum Path Sum](https://leetcode.com/problems/minimum-path-sum/description/)
+- [LeetCode 329. Longest Increasing Path in a Matrix](https://leetcode.com/problems/longest-increasing-path-in-a-matrix/description/)
 
 ## 15. 位运算DP
 
 **位运算DP** 模式用于解决涉及组合优化和集合操作的问题。
 
 #### LeetCode题目：
--   [LeetCode 337: House Robber III](https://leetcode.com/problems/house-robber-iii/description/)
--   [LeetCode 124: Binary Tree Maximum Path Sum](https://leetcode.com/problems/binary-tree-maximum-path-sum/description/)
--   [LeetCode 968: Binary Tree Cameras](https://leetcode.com/problems/binary-tree-cameras/description/)
+
+- [LeetCode 337: House Robber III](https://leetcode.com/problems/house-robber-iii/description/)
+- [LeetCode 124: Binary Tree Maximum Path Sum](https://leetcode.com/problems/binary-tree-maximum-path-sum/description/)
+- [LeetCode 968: Binary Tree Cameras](https://leetcode.com/problems/binary-tree-cameras/description/)
+
 ## 16. 图上的动态规划
 
 **[图上的动态规划](https://medium.com/@logicdevildotcom/dynamic-programming-applied-to-graphs-f33b6b8a8247)** 模式在以下情况下非常有用：
 
 1. 你在处理涉及图结构的问题。
-
 2. 问题需要找到图上的最优路径、最长路径、循环或其他优化属性。
-
 3. 你需要基于节点或边的邻居或连接组件计算值。
-
 4. 问题涉及遍历图，同时维护一些状态。
-
 
 #### LeetCode题目：
 
 - [LeetCode 787: K站中转内最便宜的航班](https://leetcode.com/problems/cheapest-flights-within-k-stops/description/)
 - [LeetCode 1334: 阈值距离内邻居最少的城市](https://leetcode.com/problems/find-the-city-with-the-smallest-number-of-neighbors-at-a-threshold-distance/description/)
 
-
 ## 17. 数位DP
 
 **[数位DP](https://www.geeksforgeeks.org/digit-dp-introduction/)** 模式在以下情况下非常有用：
 
 1. 你在处理涉及范围内的数字计数或求和的问题。
-
 2. 问题需要单独考虑数字的每一位。
-
 3. 你需要找到与范围内数字的数字相关的模式或属性。
-
 4. 数字的范围很大（通常高达10^18或更多），使得暴力方法不可行。
-
 5. 问题涉及对数字的限制。
-
 
 #### LeetCode题目：
 
 - [LeetCode 357: 统计各位数字都不同的数字个数](https://leetcode.com/problems/count-numbers-with-unique-digits/description/)
 - [LeetCode 233: 数字1的个数](https://leetcode.com/problems/number-of-digit-one/description/)
 - [LeetCode 902: 最大为N的数字组合](https://leetcode.com/problems/numbers-at-most-n-given-digit-set/description/)
-
 
 ## 18. 位运算DP
 
@@ -225,15 +219,10 @@
 它特别有用在以下情况下：
 
 1. 你在处理涉及**子集**或**组合**元素的问题。
-
 2. 元素总数相对较少（通常<= 20-30）。
-
 3. 你需要有效地表示和操作元素集。
-
 4. 问题涉及为每个元素做出决策（包括/排除）或跟踪访问/未访问的状态。
-
 5. 你想在DP解决方案中优化空间使用。
-
 
 #### LeetCode题目：
 
@@ -241,19 +230,14 @@
 - [LeetCode 2305: 公平分发饼干](https://leetcode.com/problems/fair-distribution-of-cookies/description/)
 - [LeetCode 847: 访问所有节点的最短路径](https://leetcode.com/problems/shortest-path-visiting-all-nodes/description/)
 
-
 ## 19. 概率DP
 
 这种模式在以下情况下非常有用：
 
 1. 你在处理涉及概率计算的问题。
-
 2. 状态的概率取决于先前状态的概率。
-
 3. 你需要计算结果的期望值。
-
 4. 问题涉及随机过程或机会游戏。
-
 
 #### LeetCode题目：
 
@@ -261,23 +245,19 @@
 - [LeetCode 808: 分汤](https://leetcode.com/problems/soup-servings/description/)
 - [LeetCode 837: 新21点](https://leetcode.com/problems/new-21-game/description/)
 
-
 ## 20. 状态机DP
 
 **[状态机DP](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-transaction-fee/solutions/108870/most-consistent-ways-of-dealing-with-the-series-of-stock-problems/)** 模式在以下情况下非常有用：
 
 1. 问题可以建模为一系列状态和这些状态之间的转换。
-
 2. 有明确的规则从一个状态移动到另一个状态。
-
 3. 最优解依赖于做出最佳的状态转换序列。
-
 4. 问题涉及做出影响未来状态的决策。
-
 5. 存在有限数量的可能状态，并且每个状态可以明确定义。
-
 
 #### LeetCode题目：
 
 - [LeetCode 309: 最佳买卖股票时机含冷冻期](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-cooldown/description/)
 - [LeetCode 123: 买卖股票的最佳时机 III](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iii/description/)
+
+## File Name：LeetCode number + DP type
