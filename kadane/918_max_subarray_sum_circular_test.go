@@ -11,7 +11,20 @@ func Test_maxSubarraySumCircular(t *testing.T) {
 		args args
 		want int
 	}{
-		// TODO: Add test cases.
+		{
+			name: "test",
+			args: args{
+				nums: []int{3, -1, 2, -1},
+			},
+			want: 3,
+		},
+		{
+			name: "test",
+			args: args{
+				nums: []int{5, -3, 5},
+			},
+			want: 10,
+		},
 	}
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
